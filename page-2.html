@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
     <script type="module" crossorigin src="/goit-js-hw-11/assets/modulepreload-polyfill-3cfb730f.js"></script>
-    <script type="module" crossorigin src="/goit-js-hw-11/assets/form-4ed993c7.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-11/assets/form-7a949a4f.js"></script>
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/form-243e18c1.css">
   </head>
   <body>
     <section>
@@ -22,24 +23,24 @@
     <title>Document</title>
   </head>
   <body>
-    <form class="search-form">
-        <input
-          type="text"
-          class="input-field"
-          placeholder="Search images..."
-          autocomplete="off"
-          required
-        />
-        <button type="submit" class="search-btn">Search</button>
-      </form>
-      <div class="spinner disabled"></div>
-      <span class="loading-text disabled">Loading images, please wait...</span>
-      <span class="query-text disabled"
-        >Your result for... <span class="query-word"></span>
-      </span>
-      <div class="gallery-result">
-        <ul class="gallery-result-list"></ul>
-      </div>
+    <form class="form">
+      <input
+        type="text"
+        class="input"
+        placeholder="  Search images..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit" class="search-button">Search</button>
+    </form>
+    <div class="disabled"></div>
+    <span class="loading-text">Loading images, please wait...</span>
+    <span class="result-disabled"
+      >Your result for... <span class="result"></span>
+    </span>
+    <div class="gallery">
+      <ul class="gallery-list"></ul>
+    </div>
   </body>
 </html>
 
