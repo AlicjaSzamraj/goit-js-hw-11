@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="form.js" defer></script>
+    <link rel="stylesheet" href="form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="search-form">
+        <input
+          type="text"
+          class="input-field"
+          placeholder="Search images..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+      <div class="spinner disabled"></div>
+      <span class="loading-text disabled">Loading images, please wait...</span>
+      <span class="query-text disabled"
+        >Your result for... <span class="query-word"></span>
+      </span>
+      <div class="gallery-result">
+        <ul class="gallery-result-list"></ul>
+      </div>
+  </body>
+</html>
