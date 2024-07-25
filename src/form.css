@@ -12,6 +12,7 @@ body {
   justify-content: center;
   gap: 8px;
   margin-bottom: 40px;
+  margin: 0 auto;
 }
 input {
   width: 272px;
@@ -19,7 +20,9 @@ input {
   gap: 8px;
   border-radius: 4px;
   border: #808080 1px solid;
+  padding-inline: 10px;
 }
+
 input:hover {
   border: 1px solid #000000;
 }
@@ -40,4 +43,27 @@ input:focus {
 .search-button:hover {
   background-color: #6c8cff;
   border: #6c8cff;
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.loading-text {
+  display: flex;
+  justify-content: center;
+}
+.result-text {
+  text-align: center;
+  display: block;
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.noactive {
+  display: none;
 }
