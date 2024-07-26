@@ -1,9 +1,9 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0, 04em;
+  letter-spacing: 0.04em;
   color: black;
 }
 
@@ -14,7 +14,7 @@ body {
   margin-bottom: 40px;
   margin: 0 auto;
 }
-input {
+.input {
   width: 272px;
   height: 40px;
   gap: 8px;
@@ -23,10 +23,10 @@ input {
   padding-inline: 10px;
 }
 
-input:hover {
+.input:hover {
   border: 1px solid #000000;
 }
-input:focus {
+.input:focus {
   border: 1px solid #4e75ff;
   border-color: #4e75ff;
 }
@@ -45,25 +45,58 @@ input:focus {
   border: #6c8cff;
 }
 .gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 24px;
+  max-width: 1128px;
+  height: 200px;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
+.gallery-list li {
+  flex-basis: calc(33.33% -24px);
+}
+.list-container {
+  border: 1px solid #808080;
+  width: 450px;
+  height: 200px;
+}
+
+.image-container {
+  border: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 450px;
+  height: 135px;
+  overflow: hidden;
+}
+
+.image-container img {
+  cursor: pointer;
+}
+
+.descr-list {
+  display: flex;
+  text-align: center;
+  gap: 32px;
+  padding: 4px 16px 4px 16px;
+  list-style-type: none;
+}
+
 .loading-text {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .result-text {
   text-align: center;
   display: block;
+  margin-bottom: 30px;
 }
-.gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-}
-.noactive {
+
+.disabled {
   display: none;
 }
