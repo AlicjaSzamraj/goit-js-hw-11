@@ -21,7 +21,7 @@ const resultText = createToggle('.result-text');
 
 form.addEventListener('submit', event => {
   event.preventDefault();
-  const request = input.ariaValueMax;
+  const request = input.value;
   fetchImages(request);
 });
 function fetchImages(request) {
