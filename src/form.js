@@ -5,8 +5,6 @@ import 'izitoast/dist/css/iziToast.min.css';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const apiKey = '45116673-24298b0cd3e8b5c60e15e7e67';
-const urlAddress = 'http://pixabay.com/api';
 const form = document.querySelector('.form');
 const input = document.querySelector('.input');
 const galleryList = document.querySelector('.gallery-list');
@@ -27,9 +25,17 @@ form.addEventListener('submit', event => {
   fetchImages(request);
 });
 function fetchImages(request) {
-  const url = `${urlAddress}?key=${apiKey}&q=${encodeURIComponent(
-    request
-  )}&image_type=photo&orientation=horizontal&safesearch=true`;
+  const BASE_URL = 'https://pixabay.com/api/';
+
+  const params = new URLSearchParams({
+    key: '45116673-24298b0cd3e8b5c60e15e7e67',
+    q: request,
+    image_type: 'photo',
+    orientation: 'horizontal',
+    safesearch: true,
+  });
+
+  const url = `${BASE_URL}?${params}`;
   loader.enable();
   loadText.enable();
 
